@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#def8f8"
+    tools:context=".AddMentorActivity">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/intro_circle"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="-70dp"
+        android:id="@+id/first_circle.2"
+
+        />
+
+
+    <ImageView
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/intro_circle"
+        android:layout_marginTop="-135dp"
+
+        />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backarror"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a new Mentor"
+        android:textColor="@color/mainColor"
+        android:textSize="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help us expand"
+        android:textColor="@color/mainColor"
+        android:textSize="20dp"
+        android:layout_alignEnd="@id/addText"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/childLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundstyle"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyles2"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/videocam"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Video"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="-20dp"
+                    android:textColor="@color/mainColor"
+                    android:paddingBottom="5dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/roundstyles2"
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/photocam"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Photo"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="-20dp"
+                    android:textColor="@color/mainColor"
+                    android:paddingBottom="5dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET STARTED!"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10000dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/roundstyles2"
+            android:hint="Enter Name"
+            android:padding="5dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="220dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/roundstyles2"
+            android:hint="Enter Description"
+            android:padding="5dp"
+            android:textColor="@color/white" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="290dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/status1"
+            android:hint="Enter status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/roundstyles2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp" />
+
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/mainColor"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:padding="10dp"
+            tools:ignore="TextContrastCheck" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottomnavigation"
+            android:background="@color/mainColor"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
